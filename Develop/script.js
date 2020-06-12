@@ -25,15 +25,17 @@ var fullArray= [];
 
 function generatePassword(){
 
+var passLength = 0;
+do {
 var passLength = prompt("How long would you like the password to be? (Between 8 and 128 characters)");
-  var num = parseInt(passLength);
+  var numOfChars = parseInt(passLength);
   if(8 <= passLength && passLength <= 128){
     alert("This is a valid password length.")
     console.log(passLength);
-  } else {
+  } while (numOfChars<8 || numOfChars>128){
     alert("The password you have entered does not meet the criteria for a password. Please enter a valid password length.");
   }
-
+  
 var yesLowerCase = confirm ("Would you like to use lower case letters for your password?");
   if(yesLowerCase) {
     fullArray=fullArray.concat(charLowerCase);
