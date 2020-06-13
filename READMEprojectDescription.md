@@ -4,4 +4,6 @@ For this Homework #3 project, we created a password generator using arrays and l
 
  As password variables are selected, each input will be concatenated into the array. Then, the math.random will select random array elements to generate the new password that satisfies all parameters. The password will then ultimately be displayed on the browswer page. 
 
- This homework project intended for us to use arrays and loops, but we also learned how to avoid creating infinite loops! 
+ This homework project intended for us to use arrays and loops, but we also learned how to avoid creating infinite loops!
+
+ My code in action: 
