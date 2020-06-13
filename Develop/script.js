@@ -26,16 +26,25 @@ var sym =["!", "@", "#", "$", "%", "^", "*","'" , "=" , "-", "_"];
 var fullArray= [];
 var passLength = 0;
 
-do{
-  var passLength = prompt("How long would you like the password to be? (Between 8 and 128 characters");
+do {
+  var passLength = parseInt(prompt("How long would you like the password to be? (Between 8 and 128 characters"));
+      console.log(passLength);
 }
-while(passLength<8 || passLength>128);
+while(passLength<8 || passLength>128)
     if(passLength){
       alert("This is a valid password length. Please answer the following questions.");
-    console.log(passLength);
-    } else {
-      alert("This is an invalid password length. Please enter a password length between 8 and 128 character.");
+      console.log(passLength);
     }
+// do {
+//     var passLength = parseInt(prompt("How long would you like the password to be? (Between 8 and 128 characters"));
+//       console.log(passLength);
+//     }
+// while (passLength>8 && passLength>128)
+//     if(passLength !==true){
+//     alert("This is an invalid password length. Please enter a password length between 8 and 128 character.");
+//     } 
+//     passLength = prompt("How long would you like the password to be? (Between 8 and 128 characters");
+  
 do {
 var yesLowerCase = confirm ("Would you like to use lower case letters for your password?");
   if(yesLowerCase) {
@@ -48,7 +57,6 @@ var yesUpperCase = confirm("Would you like to use upper case letters for your pa
     fullArray=fullArray.concat(charUpperCase);
        console.log(fullArray);
   }
-
 
 var yesSpecial = confirm("Would you like to use special characters for your password?");
   if(yesSpecial) {
